@@ -6,15 +6,14 @@ const middlewares = [
   thunk,
 ]
 
-if (__DEV__) {
-  /*eslint-disable */    
-  const { createLogger } = require('redux-logger')
+if (__DEV__) { // eslint-disable-line
+  const { createLogger } = require('redux-logger') // eslint-disable-line
   middlewares.push(createLogger({ collapsed: true }))
 }
 
 const store = createStore(
   reducer,
-  applyMiddleware(...middlewares)
+  applyMiddleware(...middlewares),
 )
 
 export default store

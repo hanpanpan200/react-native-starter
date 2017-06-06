@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
 })
 
-const ReactNativeStarter = () => (
+const App = () => (
   <Provider store={store}>
     <View style={styles.container}>
       <Text style={styles.welcome}>
@@ -43,4 +43,4 @@ const ReactNativeStarter = () => (
   </Provider>
 )
 
-export default ReactNativeStarter
+export default App

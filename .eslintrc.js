@@ -33,6 +33,6 @@ module.exports = {
             "error",
             "never"
         ],
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], // Allow to use jsx in js file
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }] // Allow to use jsx in js file
     }
 };

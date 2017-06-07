@@ -1,11 +1,11 @@
 import { StackNavigator } from 'react-navigation'
-import Home from './components/Home'
+import ContactsContainer from './containers/ContactsContainer'
 
 const AppNavigator = StackNavigator({
-  Home: {
-    screen: Home,
+  Contacts: {
+    screen: ContactsContainer,
     navigationOptions: {
-      title: 'Home',
+      title: 'Contacts',
     },
   },
 })

@@ -11,7 +11,7 @@ jest.mock('Linking', () => ({
   canOpenURL: jest.fn(),
   getInitialURL: jest
     .fn()
-    .mockImplementation((value: string) => Promise.resolve(value)),
+    .mockImplementation(value => Promise.resolve(value)),
 }))
 
 // See https://github.com/facebook/react-native/issues/11659

@@ -31,15 +31,12 @@
   },
   "jest": {
     "preset": "react-native",
-    "setupFiles": [
-      "<rootDir>/jest-setup.js"
-    ],
     "globals": {
       "__DEV__": true
     },
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    },
+    "setupFiles": [
+      "<rootDir>/jest-setup.js"
+    ],
     "transformIgnorePatterns": [
       "/node_modules\/(?!react-native|react-navigation)/"
     ]

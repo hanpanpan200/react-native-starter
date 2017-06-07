@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle:ios": "node ./node_modules/react-native/local-cli/cli.js bundle --platform ios --entry-file index.ios.js --bundle-output ios/PepperoniAppTemplate/main.jsbundle --dev=false --verbose",
+    "lint": "eslint src test",
     "test": "jest"
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
+    "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.6",

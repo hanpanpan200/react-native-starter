@@ -4,10 +4,10 @@ const navigatorInitialState = {}
 
 const navigator = (state = navigatorInitialState, action) => {
   switch (action.type) {
-    case NAVIGATOR_REQUEST:
-      return { ...state }
-    default:
-      return state
+  case NAVIGATOR_REQUEST:
+    return { ...state }
+  default:
+    return state
   }
 }
 

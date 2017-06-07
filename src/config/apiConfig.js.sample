@@ -1,0 +1,7 @@
+const leanCloud = {
+  API_HOST: 'your_api_server_endpoint',
+  API_ID: 'leanCloud_api_id',
+  API_KEY: 'leanCloud_api_key',
+}
+
+export default leanCloud

@@ -54,3 +54,6 @@ fastlane/screenshots
 
 # IDE
 .vscode/*
+
+# Ignore api config file
+src/config/apiConfig.js

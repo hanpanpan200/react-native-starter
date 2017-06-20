@@ -8,6 +8,7 @@
     "lint": "eslint src test"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
     "react-navigation": "^1.0.0-beta.11",
@@ -38,7 +39,7 @@
       "<rootDir>/jest-setup.js"
     ],
     "transformIgnorePatterns": [
-      "/node_modules\/(?!react-native|react-navigation)/"
+      "/node_modules/(?!react-native|react-navigation)/"
     ]
   }
 }

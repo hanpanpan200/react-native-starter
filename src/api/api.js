@@ -1,12 +1,11 @@
 import axios from 'axios'
-import apiConfig from '../config/apiConfig'
+import ApiHost from '../config/apiConfig'
 
 const api = axios.create({
   headers: {
+    'baseURL': ApiHost,
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'X-LC-Id': apiConfig.API_ID,
-    'X-LC-Key': apiConfig.API_KEY,
   },
 })
 

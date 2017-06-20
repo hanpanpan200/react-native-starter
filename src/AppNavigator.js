@@ -1,11 +1,11 @@
 import { StackNavigator } from 'react-navigation'
-import ContactsContainer from './containers/ContactsContainer'
+import LoginContainer from './auth/LoginContainer'
 
 const AppNavigator = StackNavigator({
   Contacts: {
-    screen: ContactsContainer,
+    screen: LoginContainer,
     navigationOptions: {
-      title: 'Contacts',
+      title: 'Login',
     },
   },
 })

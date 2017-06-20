@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import contacts from './contacts'
+import auth from './auth/auth'
 
 export default combineReducers({
-  contacts,
+  auth,
 })

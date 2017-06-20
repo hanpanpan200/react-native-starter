@@ -1,7 +1,3 @@
-const leanCloud = {
-  API_HOST: 'https://leancloud.cn:443/1.1',
-  API_ID: 'leanCloud_api_id',
-  API_KEY: 'leanCloud_api_key',
-}
+const API_HOST = ''
 
-export default leanCloud
+export default API_HOST

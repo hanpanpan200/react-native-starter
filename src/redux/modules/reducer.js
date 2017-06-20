@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import navigator from './navigator'
+import contacts from './contacts'
 
 export default combineReducers({
-  navigator,
+  contacts,
 })

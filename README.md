@@ -11,11 +11,17 @@ In the `Building Projects with Native Code` section, please make sure you have s
 ### Stack
 
 [React Native](https://facebook.github.io/react-native/) `0.45.0` for build native Apps
+
 [Redux](https://github.com/reactjs/redux) `3.6.0` a predictable state container for Javascript apps
+
 [axios](https://github.com/mzabriskie/axios) `0.16.2` a promise based HTTP client for the browser and node.js
+
 [prop-types](https://github.com/facebook/prop-types) `15.5.10` Runtime type checking for React props and similar objects
+
 [react-navigation](https://github.com/react-community/react-navigation) `1.0.0-beta.11` navigation for React Native
+
 [redux-thunk](https://github.com/gaearon/redux-thunk) `5.0.5` Thunk middleware for Redux
+
 [redux-logger](https://github.com/evgenyrodionov/redux-logger) `3.0.6` Logger for Redux
 
 ### How to run

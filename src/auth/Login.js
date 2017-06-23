@@ -8,7 +8,7 @@ class Login extends Component {
   }
 
   login = () => {
-    this.props.login()
+    this.props.login({ username: 'FakeUserName', password: 'FakePassword' })
   }
 
   render() {

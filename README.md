@@ -72,4 +72,25 @@ yarn install react-native-rename
 react-native-rename NewAppName
 ```
 
+#### Change ApiHost
+
+Please change your API HOST in `./src/config/apiConfig`
+
+For example, change:
+
+```JavaScript
+const API_HOST = ''
+
+export default API_HOST
+
+```
+To:
+
+```
+const API_HOST = 'https://yourhost'
+
+export default API_HOST
+
+```
+
 Then you can build your own App on the basis of ReactNativeStarter! 🙌🏻

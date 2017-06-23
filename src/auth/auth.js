@@ -41,11 +41,10 @@ function loginFailed(error) {
 
 export function login(params) {
   const { username, password } = params
-  const url = '/login'
 
   return dispatch => {
     dispatch(requestLogin())
-    api.post(url, {
+    api.post('/login', {
       username: username,
       password: password,
     }).then(() => {

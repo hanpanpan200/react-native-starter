@@ -65,7 +65,8 @@ With [react-native-rename](https://www.npmjs.com/package/react-native-rename), R
 
 #### Install the package
 ```
-yarn install react-native-rename
+yarn global add react-native-rename
+
 ```
 #### Rename the App
 ```

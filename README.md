@@ -18,7 +18,7 @@ In the `Building Projects with Native Code` section, please make sure you have s
 
 [prop-types](https://github.com/facebook/prop-types) `15.5.10` Runtime type checking for React props and similar objects
 
-[react-navigation](https://github.com/react-community/react-navigation) `1.0.0-beta.11` navigation for React Native
+[react-native-router-flux](https://github.com/aksonov/react-native-router-flux) `^4.0.0-beta.21` navigation for React Native
 
 [redux-thunk](https://github.com/gaearon/redux-thunk) `5.0.5` Thunk middleware for Redux
 

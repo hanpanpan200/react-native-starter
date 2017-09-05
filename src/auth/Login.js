@@ -1,6 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
+import { Actions } from 'react-native-router-flux'
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+})
 
 class Login extends Component {
   static propTypes = {
@@ -13,8 +22,9 @@ class Login extends Component {
 
   render() {
     return (
-      <View>
-        <Text onPress={this.login}>Login</Text>
+      <View style={styles.container}>
+        <Text onPress={this.login}>Call Me To Login</Text>
+        <Text onPress={Actions.tabbar}>Show Tab</Text>
       </View>
     )
   }

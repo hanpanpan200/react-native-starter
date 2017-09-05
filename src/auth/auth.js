@@ -19,7 +19,6 @@ const auth = (state = authInitialState, action) => {
   }
 }
 
-
 function requestLogin() {
   return {
     type: AUTH_REQUEST_LOGIN,
@@ -44,7 +43,7 @@ export function login(params) {
 
   return dispatch => {
     dispatch(requestLogin())
-    api.post('/login', {
+    return api.post('/login', {
       username: username,
       password: password,
     }).then(() => {

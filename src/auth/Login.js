@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 import { View, Text, StyleSheet } from 'react-native'
 import { Actions } from 'react-native-router-flux'
+import { login } from './auth'
 
 const styles = StyleSheet.create({
   container: {
@@ -12,10 +14,6 @@ const styles = StyleSheet.create({
 })
 
 class Login extends Component {
-  static propTypes = {
-    login: PropTypes.func.isRequired,
-  }
-
   login = () => {
     this.props.login({ username: 'FakeUserName', password: 'FakePassword' })
   }
@@ -23,11 +21,20 @@ class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text onPress={this.login}>Call Me To Login</Text>
+        <Text onPress={this.login}>Fake Login Action</Text>
         <Text onPress={Actions.tabbar}>Show Tab</Text>
       </View>
     )
   }
 }
 
-export default Login
+Login.propTypes = {
+  login: PropTypes.func.isRequired,
+}
+
+const mapStateToProps = state => ({
+  message: state.message,
+})
+
+export default connect(mapStateToProps, { login })(Login)
+

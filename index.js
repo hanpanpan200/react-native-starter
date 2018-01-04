@@ -1,9 +1,13 @@
 import React from 'react'
+import { Provider } from 'react-redux'
 import { AppRegistry } from 'react-native'
-import App from './src/App'
+import AppRouters from './src/AppRouters'
+import store from './src/store'
 
 const ReactNativeStarter = () => (
-  <App />
+  <Provider store={store}>
+    <AppRouters />
+  </Provider>
 )
 
 export default ReactNativeStarter

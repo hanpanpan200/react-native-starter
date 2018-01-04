@@ -1,7 +1,7 @@
 import React from 'react'
 import { Scene, Router } from 'react-native-router-flux'
 import { connect } from 'react-redux'
-import LoginContainer from './auth/LoginContainer'
+import LoginContainer from './auth/Login'
 import PageA from './navigationExample/PageA'
 import PageB from './navigationExample/PageB'
 import PageC from './navigationExample/PageC'

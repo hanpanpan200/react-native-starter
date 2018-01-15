@@ -12,7 +12,7 @@ const RouterWithRedux = connect()(Router)
 
 const AppRouters = () => (
   <RouterWithRedux>
-    <Scene key="root" hideNavBar hideTabBar>
+    <Scene key="root">
       <Scene key="login" component={LoginContainer} />
       <Scene
         key="tabbar"

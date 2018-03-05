@@ -26,7 +26,7 @@ const AppRouters = () => (
         inactiveTintColor="blue"
         labelStyle={styles.labelStyle}
         tabs
-        hideNavbar
+        hideNavBar
       >
         <Scene
           key="pageA"

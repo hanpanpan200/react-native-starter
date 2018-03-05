@@ -12,7 +12,7 @@
     "prop-types": "^15.5.10",
     "react": "16.0.0",
     "react-native": "0.51.0",
-    "react-native-router-flux": "^4.0.0-beta.21",
+    "react-native-router-flux": "4.0.0-beta.27",
     "react-native-vector-icons": "^4.3.0",
     "react-redux": "^5.0.6",
     "redux": "^3.6.0",

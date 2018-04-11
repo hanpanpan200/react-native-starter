@@ -39,5 +39,8 @@ module.exports = {
         "arrow-parens": ["error", "as-needed"],
         "quote-props": ["error", "consistent"],
         "object-shorthand": ["error", "consistent"],
+    },
+    "globals": {
+        "__DEV__": true
     }
-};
+}

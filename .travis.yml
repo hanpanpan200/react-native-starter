@@ -9,4 +9,4 @@ before_install:
   - npm install --global yarn
 script:
     - yarn
-    - yarn test
+    - yarn lint

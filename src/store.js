@@ -6,7 +6,7 @@ const middlewares = [
   thunk,
 ]
 
-if (__DEV__) { /* global __DEV__ */
+if (__DEV__) {
   const { createLogger } = require('redux-logger') // eslint-disable-line
   middlewares.push(createLogger({ collapsed: true }))
 }

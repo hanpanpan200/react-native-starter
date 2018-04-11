@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 8
+sudo: required
+cache:
+  directories:
+    - node_modules
+before_install:
+  - npm install --global yarn
+script:
+    - yarn
+    - yarn test

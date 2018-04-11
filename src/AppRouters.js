@@ -1,78 +1,55 @@
 import React from 'react'
+import { Tabs, Scene, Router } from 'react-native-router-flux'
 import { StyleSheet } from 'react-native'
-import { Scene, Router } from 'react-native-router-flux'
 import { connect } from 'react-redux'
-import LoginContainer from './auth/Login'
-import PageA from './navigationExample/PageA'
-import PageB from './navigationExample/PageB'
-import PageC from './navigationExample/PageC'
-
+import Blank from './layout/Blank'
 import TabIcon from './layout/TabIcon'
+import { COLOR, FONT } from './constants/theme'
 
 const styles = StyleSheet.create({
-  labelStyle: {
-    fontSize: 15,
+  navigationBarStyle: {
+    backgroundColor: COLOR.BLUE,
+  },
+  titleStyle: {
+    fontSize: FONT.FONT_20,
+    color: COLOR.WHITE,
+    alignSelf: 'center',
   },
 })
+
+const NAV_BAR_STYLE = {
+  navigationBarStyle: styles.navigationBarStyle,
+  titleStyle: styles.titleStyle,
+}
 
 const RouterWithRedux = connect()(Router)
 
 const AppRouters = () => (
   <RouterWithRedux>
     <Scene key="root">
-      <Scene
-        key="tabbar"
-        activeTintColor="red"
-        inactiveTintColor="blue"
-        labelStyle={styles.labelStyle}
-        tabs
-        hideNavBar
-      >
+      <Tabs key="tabs" tabBarPosition="bottom" showLabel={false}>
         <Scene
-          key="pageA"
-          title="Page A"
-          tabBarLabel="PageA"
-          icon={props => (
-            <TabIcon
-              focused={props.focused}
-              selectedIcon="emoji-neutral"
-              unSelectedIcon="emoji-neutral"
-            />
-          )}
-          component={PageA}
+          key="list"
+          title="List"
+          icon={props => <TabIcon focused={props.focused} selectedIcon="list-alt" unSelectedIcon="list-alt" />}
+          component={Blank}
+          {...NAV_BAR_STYLE}
         />
         <Scene
-          key="pageB"
-          title="PageB"
-          tabBarLabel="PageB"
-          icon={props => (
-            <TabIcon
-              focused={props.focused}
-              selectedIcon="emoji-flirt"
-              unSelectedIcon="emoji-flirt"
-            />
-          )}
-          component={PageB}
+          key="music"
+          title="Music"
+          icon={props => <TabIcon focused={props.focused} selectedIcon="music" unSelectedIcon="music" />}
+          component={Blank}
+          {...NAV_BAR_STYLE}
         />
         <Scene
-          key="pageC"
-          title="PageC"
-          tabBarLabel="PageC"
-          icon={props => (
-            <TabIcon
-              focused={props.focused}
-              selectedIcon="emoji-happy"
-              unSelectedIcon="emoji-happy"
-            />
-          )}
-          component={PageC}
+          key="me"
+          title="Me"
+          icon={props => <TabIcon focused={props.focused} selectedIcon="user" unSelectedIcon="user-o" />}
+          component={Blank}
+          {...NAV_BAR_STYLE}
         />
-      </Scene>
-      <Scene
-        key="login"
-        title="Login"
-        component={LoginContainer}
-      />
+      </Tabs>
     </Scene>
   </RouterWithRedux>
 )

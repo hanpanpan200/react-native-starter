@@ -31,7 +31,7 @@ const AppRouters = () => (
         <Scene
           key="list"
           title="List"
-          icon={props => <TabIcon focused={props.focused} selectedIcon="list-alt" unSelectedIcon="list-alt" />}
+          icon={props => <TabIcon focused={props.focused} selectedIcon="list-alt" unSelectedIcon="list-alt" />} // eslint-disable-line
           component={Blank}
           {...NAV_BAR_STYLE}
         />

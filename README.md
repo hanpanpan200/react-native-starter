@@ -1,6 +1,6 @@
-## React Native Starter
-[![Build Status](https://travis-ci.org/hanpanpan200/react-native-starter.svg?branch=master)](https://travis-ci.org/hanpanpan200/react-native-starter)
+## React Native Starter  [![Build Status](https://travis-ci.org/hanpanpan200/react-native-starter.svg?branch=master)](https://travis-ci.org/hanpanpan200/react-native-starter)
 React Native Starter is a React Native boilerplate app to get you up and running quickly.
+
 
 ### Setup React Native
 

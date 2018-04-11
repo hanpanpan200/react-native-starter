@@ -10,19 +10,19 @@ In the `Building Projects with Native Code` section, please make sure you have s
 
 ### Stack
 
-[React Native](https://facebook.github.io/react-native/) `0.45.0` for build native Apps
+[React Native](https://facebook.github.io/react-native/) for build native Apps
 
-[Redux](https://github.com/reactjs/redux) `3.6.0` a predictable state container for Javascript apps
+[Redux](https://github.com/reactjs/redux) a predictable state container for Javascript apps
 
-[axios](https://github.com/mzabriskie/axios) `0.16.2` a promise based HTTP client for the browser and node.js
+[axios](https://github.com/mzabriskie/axios) a promise based HTTP client for the browser and node.js
 
-[prop-types](https://github.com/facebook/prop-types) `15.5.10` Runtime type checking for React props and similar objects
+[prop-types](https://github.com/facebook/prop-types) Runtime type checking for React props and similar objects
 
-[react-native-router-flux](https://github.com/aksonov/react-native-router-flux) `^4.0.0-beta.21` navigation for React Native
+[react-native-router-flux](https://github.com/aksonov/react-native-router-flux) navigation for React Native
 
-[redux-thunk](https://github.com/gaearon/redux-thunk) `5.0.5` Thunk middleware for Redux
+[redux-thunk](https://github.com/gaearon/redux-thunk) Thunk middleware for Redux
 
-[redux-logger](https://github.com/evgenyrodionov/redux-logger) `3.0.6` Logger for Redux
+[redux-logger](https://github.com/evgenyrodionov/redux-logger) Logger for Redux
 
 ### How to run
 
@@ -30,7 +30,6 @@ Please use [yarn](https://yarnpkg.com/en/) to install the npm dependencies.
 
 ```
 yarn install
-react-native link
 ```
 
 Then you can run iOS:

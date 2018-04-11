@@ -1,9 +1,9 @@
 import axios from 'axios'
-import ApiHost from '../config/apiConfig'
+import ApiHost from './apiConfig'
 
 const api = axios.create({
   'baseURL': ApiHost,
-  headers: {
+  'headers': {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
   },
